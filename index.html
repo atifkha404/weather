@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Hamara Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Shahar ka naam likhein...">
+            <button id="search-btn">🔍 Search</button>
+        </div>
+        
+        <div class="weather-info" id="weather-info">
+            <div class="weather-header">
+                <h2 id="city-name">Delhi, IN</h2>
+                <p id="date">Monday, 15 January 2024</p>
+            </div>
+            
+            <div class="temperature">
+                <span id="temp">--</span>
+                <span class="unit">°C</span>
+            </div>
+            
+            <div class="weather-icon">
+                <img id="icon" src="" alt="Weather Icon">
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Himta: <span id="humidity">--</span>%</p>
+                </div>
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Hawa: <span id="wind">--</span> km/h</p>
+                </div>
+                <div class="detail">
+                    <span>🌅</span>
+                    <p>Feeling: <span id="feels-like">--</span>°C</p>
+                </div>
+            </div>
+            
+            <div class="description" id="description">
+                --
+            </div>
+        </div>
+        
+        <div class="error-message" id="error-message">
+            Shahar nahi mila! Dobara try karein.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
